@@ -1,9 +1,7 @@
 from django.db import models
-<<<<<<< HEAD
 
-# Create your models here.
-=======
 from django.contrib.auth.hashers import make_password
+
 
 # Create your models here.
 class MyUser(models.Model):
@@ -16,4 +14,3 @@ class MyUser(models.Model):
         # Хешируем пароль перед сохранением
         self.password = make_password(self.password)
         super(MyUser, self).save(*args, **kwargs)
->>>>>>> 343ac9a229c2342907b42270ff5d1fe137ea07e5
