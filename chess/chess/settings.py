@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'chess.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Kirill',      # Имя вашей базы данных
+        'USER': 'postgres',  # Имя пользователя PostgreSQL
+        'PASSWORD': '12345Rus',  # Пароль пользователя PostgreSQL
+        'HOST': 'localhost',      # Хост базы данных (обычно localhost)
+        'PORT': '5432',               # Порт базы данных (по умолчанию 5432)
     }
 }
 
