@@ -12,4 +12,4 @@ class MyUser(models.Model):
         # Хешируем пароль перед сохранением
         self.password = make_password(self.password)
         super(MyUser, self).save(*args, **kwargs)
-#home
+#home4
